@@ -27,9 +27,9 @@ SECRET_KEY = config('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['https://arcane-atoll-62581.herokuapp.com/']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -128,6 +128,6 @@ STATICFILES_DIRS = [
              os.path.join(BASE_DIR, 'static'),
         ]
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 django_heroku.settings(locals())
